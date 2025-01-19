@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Annotation profile for lazy-migrator" enabled="true">
+        <sourceOutputDir name="../generated-sources/annotations" />
+        <sourceTestOutputDir name="../generated-test-sources/test-annotations" />
+        <module name="lazy-migrator.main" />
+        <module name="lazy-migrator.test" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
