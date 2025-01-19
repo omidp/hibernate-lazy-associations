@@ -52,11 +52,10 @@ public class LazyAssociationsTest implements RewriteTest {
 					}
 					""",
 				"""
-					import jakarta.persistence.Entity;
-					import jakarta.persistence.Id;
-					import jakarta.persistence.JoinColumn;
-					import jakarta.persistence.ManyToOne;
+					import jakarta.persistence.*;
+					
 					import java.util.UUID;
+					
 					public class TestEntity {
 					private UUID id;
 					@ManyToOne(fetch = FetchType.LAZY)
@@ -84,11 +83,10 @@ public class LazyAssociationsTest implements RewriteTest {
 					}
 					""",
 				"""
-					import jakarta.persistence.Entity;
-					import jakarta.persistence.Id;
-					import jakarta.persistence.JoinColumn;
-					import jakarta.persistence.ManyToOne;
+					import jakarta.persistence.*;
+					
 					import java.util.UUID;
+					
 					public class TestEntity {
 					private UUID id;
 					@ManyToOne(fetch = FetchType.LAZY)
@@ -116,11 +114,10 @@ public class LazyAssociationsTest implements RewriteTest {
 					}
 					""",
 				"""
-					import jakarta.persistence.Entity;
-					import jakarta.persistence.Id;
-					import jakarta.persistence.JoinColumn;
-					import jakarta.persistence.ManyToOne;
+					import jakarta.persistence.*;
+					
 					import java.util.UUID;
+					
 					public class TestEntity {
 					private UUID id;
 					@ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, optional = false)
@@ -148,11 +145,10 @@ public class LazyAssociationsTest implements RewriteTest {
 					}
 					""",
 				"""
-					import jakarta.persistence.Entity;
-					import jakarta.persistence.Id;
-					import jakarta.persistence.JoinColumn;
-					import jakarta.persistence.OneToOne;
+					import jakarta.persistence.*;
+					
 					import java.util.UUID;
+					
 					public class TestEntity {
 					private UUID id;
 					@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, optional = false)

@@ -80,6 +80,7 @@ public class LazyAssociations extends Recipe {
 				// recipe does not apply
 				return a;
 			}
+			maybeAddImport("jakarta.persistence.FetchType", false);
 			StringBuilder members = new StringBuilder();
 			if ("jakarta.persistence.OneToOne".equals(a.getType().toString())) {
 				members.append("@OneToOne(fetch = FetchType.LAZY");
